@@ -1,0 +1,48 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+    background-image: linear-gradient(45deg ,pink,#ff6f91,#ee6352, #f9f871);
+background-size: 400%;
+animation: bg-animation 5s infinite alternate;
+}
+@keyframes bg-animation {
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+.content{
+    background: white;
+    width: 70vw;
+    padding: 3em;
+    box-shadow: 0 0 3em rgba(0, 0, 0, .15);
+
+}
+.title{
+    font-size: 2em;
+    font-weight: 900;
+    line-height: .8;
+    color: #ee6352;
+    font-family: sans-serif;
+}
+.fun{
+    cursor: pointer;
+    border: 0;
+    padding: 0.5em 1.5em;
+    font-size: 2em;
+    background-image: linear-gradient(51deg, pink,#ff6f91,#ee6352, #f9f871);
+    background-size: 100%;
+    background-position: left;
+    transition: background-position 1s;
+}
+.fun:hover{
+    background-image: linear-gradient(45deg ,red,#ff6f91,#ee6352, #f9f871);
+    background-size: 200%;
+
+    background-position: right;
+}
