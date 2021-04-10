@@ -7,7 +7,11 @@ body{
     background-image: linear-gradient(45deg ,pink,#ff6f91,#ee6352, #f9f871);
 background-size: 400%;
 animation: bg-animation 5s infinite alternate;
+h1{
+  color: red;
 }
+/* }
+
 @keyframes bg-animation {
     0%{
         background-position: left;
@@ -45,4 +49,4 @@ animation: bg-animation 5s infinite alternate;
     background-size: 200%;
 
     background-position: right;
-}
+} */
